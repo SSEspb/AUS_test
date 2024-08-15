@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Test AUS</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>1</number>
+    </property>
+    <property name="leftMargin">
+     <number>3</number>
+    </property>
+    <property name="topMargin">
+     <number>3</number>
+    </property>
+    <property name="rightMargin">
+     <number>3</number>
+    </property>
+    <property name="bottomMargin">
+     <number>3</number>
+    </property>
+    <item>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <widget class="QWidget" name="pageObjects"/>
+      <widget class="QWidget" name="pageObjectTypes"/>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Справочники</string>
+    </property>
+    <addaction name="actionObjects"/>
+    <addaction name="separator"/>
+    <addaction name="actionObjectTypes"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>БД</string>
+    </property>
+    <addaction name="actionDbConn"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>Группы объектов</string>
+    </property>
+    <addaction name="actionGroupDist"/>
+    <addaction name="actionGroupName"/>
+    <addaction name="actionGroupType"/>
+    <addaction name="actionGroupDatereg"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_2"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionObjects">
+   <property name="text">
+    <string>Объекты</string>
+   </property>
+  </action>
+  <action name="actionObjectTypes">
+   <property name="text">
+    <string>Типы</string>
+   </property>
+  </action>
+  <action name="actionDbConn">
+   <property name="text">
+    <string>Подключение</string>
+   </property>
+  </action>
+  <action name="actionGroupDist">
+   <property name="text">
+    <string>По расстоянию</string>
+   </property>
+  </action>
+  <action name="actionGroupName">
+   <property name="text">
+    <string>По имени</string>
+   </property>
+  </action>
+  <action name="actionGroupType">
+   <property name="text">
+    <string>По типу</string>
+   </property>
+  </action>
+  <action name="actionGroupDatereg">
+   <property name="text">
+    <string>По времени создания</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
